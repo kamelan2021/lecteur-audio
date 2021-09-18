@@ -1,0 +1,173 @@
+.body{
+    margin: 0;
+}
+main{
+    color:#FFF;
+    border:10px solid #000;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    /* margin-top: 5%; */
+    height: 82vh;/* à modifier */
+    background: linear-gradient(to bottom left , rgb(161, 46, 46), rgb(54, 15, 15));
+    padding-top: 10px;
+}
+/*les icones */
+.icone-right{
+    border: 2px solid #FFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px ;
+    color: #FFF;
+    float: right;
+    margin:5% 10px 0 0 ;
+}
+.icone-left{
+    border: 2px solid #FFF;
+    width: 20px;
+    height: 20px;
+    float: left;
+    border-radius: 50%;
+    padding: 5px;
+    color: #FFF;
+    margin:5% 0 0 10px ;
+    position: relative;
+}
+
+header{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin:  auto;
+}
+.logo{
+    /* border:1px solid violet; */
+    width: 20%;
+    font-weight: 500;
+}
+.logo-name{
+    text-align: top;
+    margin-top: -10px;
+    font-size: 1.5em;
+}
+nav{
+    /* border:1px dashed green; */
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    color: #FFF;
+    text-decoration:none;
+}
+.button{
+    color:#FFF;
+    border:1px solid #FFF; 
+    width:100px;
+    height: 20px;
+    align-self: center;
+    border-radius: 20px;
+    font-size: 1em;
+    text-align: center;
+    padding:10px 0 ; 
+    text-decoration: none;
+    font-size: 1.1em;
+
+}
+.big-text{
+    text-align: center;
+    
+}
+.big-text h1{
+    text-transform: capitalize;
+    font-size: 3em;
+}
+.big-text p{
+    margin-top: -20px;
+}
+.image{
+    background-image: url("../image/starboy.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* border: 1px solid blue; */
+    width: 50%;
+    height: 50vh;
+    margin-left: 30%;
+    margin-bottom: -15vh;
+    
+}
+.heure{
+    float: right;
+    margin-right: 25px;
+    
+}
+.long-bar{
+    width: 120px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, .5);
+
+}
+.bar-moyen{
+    width: 60px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.bottom text{
+    position: relative;
+    
+}
+
+.bottom-text p{
+    font-size: 1.2em;
+    margin-left: 5%;
+}
+.lecteur{
+    color: #FFF;
+}
+/* la responsivité */
+@media (max-width : 780px){
+    .heure{
+        text-align: center;
+        
+    }
+    body{
+        width: 100%;
+        height: auto;
+    }
+    main{
+        max-width: 95%;
+        height: auto;
+        margin: auto;
+        background: linear-gradient(to top right , rgb(148, 182, 55),rgba(197, 119, 119, 0.5),rgb(54, 15, 15));
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin:  auto;
+        padding-top:5px ;
+    }
+    .button{
+        align-self: flex-start;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        
+    }
+
+}
